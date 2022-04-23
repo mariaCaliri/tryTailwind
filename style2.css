@@ -1,0 +1,135 @@
+body{
+    font-family: 'Alegreya', serif;
+font-family: 'Epilogue', sans-serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Source Sans 3', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+
+}
+
+
+
+a li{
+    cursor: pointer;
+    color:  hsl(240, 18%, 77%);
+}
+
+a:hover{
+   color:  hsl(240, 38%, 20%);
+}
+
+@media(max-width: 768px){
+    #nav{
+        display: none !important;
+    }
+}
+
+@media  screen and(min-width: 375px) and (max-width:768px) {
+    #nav{
+        display: none !important;
+    }
+}
+
+@media  screen and(min-width : 1440px) {
+    #nav { display: block;
+    }
+}
+
+
+
+
+
+#imgDesktop{
+    height: 80vh;
+    margin-top: 40px;
+}
+
+@media(max-width: 768px){
+    #imgDesktop{
+        display: none !important;
+    }
+}
+
+@media  screen and(min-width: 375px) and (max-width:768px) {
+    #imgDeskot{
+        display: none !important;
+    }
+}
+
+@media  screen and(min-width : 1440px) {
+    #imgDesktop { display: block;
+    }
+}
+
+
+#title{
+    font-size: 80px;
+    margin-bottom: 50px;
+}
+
+p{
+    font-size: 18px;
+}
+
+#text{
+    margin-top: 120px;
+    margin-left: 220px;
+}
+
+#icons{
+    margin-left: 200px;
+}
+
+
+@media(max-width: 768px){
+    #login{
+        display: none !important;
+    }
+}
+
+@media  screen and(min-width: 375px) and (max-width:768px) {
+    #login{
+        display: none !important;
+    }
+}
+
+@media  screen and(min-width : 1440px) {
+    #login { display: block;
+    }
+}
+
+
+@media(max-width: 768px){
+    #title,#paragraph ,#icons,#button1, .grid{
+        display: none !important;
+    }
+}
+
+@media  screen and(min-width: 375px) and (max-width:768px) {
+    #title,#paragraph ,#icons, #button1, .grid{
+        display: none !important;
+    }
+}
+
+@media  screen and(min-width : 1440px) {
+    #title,#paragraph ,#icons, #button1, .grid { display: block;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    #icon-menu{
+        display: block;
+    }
+}
+/*
+@media  screen and(min-width : 1440px) {
+    #icon-menu{
+        display: none !important;
+    }
+}
+*/
+
+aside{
+    
+}

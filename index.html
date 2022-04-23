@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Epilogue:wght@500;700&family=Inter:wght@300;500;700&family=Playfair+Display:ital@1&family=Source+Sans+3&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+    <link rel="stylesheet" href="style2.css">
+    
+    <title>Home Page </title>
+</head>
+<body>
+  <header>
+    <div class="container">
+     
+      <span class="p-10" >
+        <img class="inline" src="logo.svg" alt="">
+      </span>
+      <span id="icon-menu"  >
+        <img class="float-right lg:hidden mr-8" src="icon-menu.svg" alt="">
+      </span>
+
+      <nav id="nav" class="inline-block static ">
+       <ul class=" inline">
+       
+        <li class="inline p-10 text-gray-500 hover:text-gray-700">
+          <a href="#"> Features <span id="dropdownDefault" data-dropdown-toggle="dropdown"><img class="inline " src="icon-arrow-down.svg" alt=""></span>
+            <span id="dropdownDefault2" data-dropdown-toggle="dropdown" class="hidden" ><img class="inline " src="icon-arrow-up.svg" alt=""></span></a>
+        </li>
+        <!--dropdown1-->
+         <div id="dropdown" class="hidden text-center absolute top-10 z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 drop-shadow-xl ">
+           <ul>
+             <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"> <img class="inline" src="icon-todo.svg" alt=""> Todo list</a></li>
+             <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"><img class="inline" src="icon-calendar.svg" alt=""> Calendar</a</li>
+             <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"><img class="inline" src="icon-reminders.svg" alt=""> Reminders</a></li>
+             <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"><img class="inline" src="icon-planning.svg" alt=""> Planning</a> </li>
+             
+           </ul>
+         </div>
+
+
+        <li class="inline p-10 text-gray-500 hover:text-gray-700">
+          <a href="#" > Company <span id="dropdownDefault3"><img class="inline" src="icon-arrow-down.svg" alt=""></span>
+            <span id="dropdownDefault4" data-dropdown-toggle="dropdown2" class="hidden" ><img class="inline " src="icon-arrow-up.svg" alt=""></span></a>
+        </li>
+        <!--dropdown-->
+        <div id="dropdown2" class=" hidden text-center absolute top-10 z-10 w-40 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 drop-shadow-xl ">
+          <ul>
+            <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"> History</a></li>
+            <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our Team</a</li>
+            <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Blog</a></li>
+          
+            
+          </ul>
+        </div>
+
+
+
+        <li class="inline p-10 text-gray-500 hover:text-gray-700" >
+         <a href="#">  Careers</a>
+        </li>
+        <li class="inline p-10 text-gray-500 hover:text-gray-700">
+          <a href="#"> About </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="login" class="float-right mr-8 text-gray-500 hover:text-gray-700 ">
+      <a class="mr-5" href="#">Login</a>
+       <button class="ring-2 ring-gray-500 rounded-lg p-1 px-3 text-gray-500 hover:ring-gray/700 hover:text-gray-700">Register</button>
+    </div>
+  </div>
+  </header>
+
+  <main class="mt-6">
+
+    <div class="grid">
+
+      <div class=" grid grid-cols-2">
+       <div id="text" class="text-center">
+       <p id="title" class=" text-left"><strong> Make <br>
+      remote work </strong></p>
+
+         <p id="paragraph" class="break-words text-left text-gray-500 sm:flex">
+          Get your team in sync,no matter your location.
+          Stremline processes,create team rituals,
+          and watch productivity soar.
+        </p>
+        <button id="button1" class=" w-32 ring-2 ring-black bg-black rounded-lg p-1 px-3 text-white hover:ring-gray/700 hover:text-gray-700 hover:bg-white mt-8">Learn more</button>
+      </div>
+
+       <div class="grid rows-2 place-content-center">
+        <img id="imgDesktop" src="image-hero-desktop.png" alt="" >
+       </div>
+      </div>
+
+
+      <div id="icons" class="text-left">
+       <img class="inline mx-6" src="client-databiz.svg" alt="">
+       <img class="inline mx-6" src="client-audiophile.svg" alt="">
+       <img class="inline mx-6" src="client-meet.svg" alt="">
+       <img class="inline mx-6" src="client-maker.svg" alt="">
+
+      </div>
+    
+    </div>
+  </main>
+
+  <!--Mobile side-->
+
+  
+  <section class="picture">
+    <div class="lg:hidden sm:block mt-10">
+    <img src="image-hero-mobile.png" alt="">
+    </div>
+  </section>
+
+  <section class="main-section lg:hidden sm:block">
+   <h1 class="text-center text-4xl mt-10"><strong> Make remote work </strong></h1>
+   <p class="text-center text-lg mt-10 text-gray-500">
+    Get your team in sync,no matter your location.
+    Stremline processes,create team rituals,
+    and watch productivity soar.
+   </p>
+
+  <button id="2button"class=" w-32 ring-2 ring-black bg-black rounded-lg p-1 px-3 text-white hover:ring-gray/700 hover:text-gray-700 hover:bg-white mt-8 ">Learn more</button>
+
+  <div id=" mini-icons" class="text-center mt-10 ">
+    <img class="inline w-12 mx-3 " src="client-databiz.svg" alt="">
+    <img class="inline  w-12 mx-3 " src="client-audiophile.svg" alt="">
+    <img class="inline  w-12 mx-3 " src="client-meet.svg" alt="">
+    <img class="inline  w-12 mx-3 " src="client-maker.svg" alt="">
+
+   </div>
+
+
+  </section>
+
+  <aside class="z-10 bg-white fixed top-0 right-0 h-full w-64">
+
+    <span id="icon-close-menu" class="lg:hidden float:right absolute top-0 right-10">
+      <img src="icon-close-menu.svg" alt="">
+    </span>
+    <nav id="secondNav">
+      
+
+    </nav>
+
+
+
+    
+
+
+
+  </aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
