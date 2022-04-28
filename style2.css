@@ -36,8 +36,15 @@ a:hover{
     }
 }
 
+#nav{
+    margin-left: 80px;
+}
 
-
+#dropdown2{
+    position: absolute !important;
+    top: 30px !important;
+    left: 200px !important;
+}
 
 
 #imgDesktop{
@@ -73,8 +80,8 @@ p{
 }
 
 #text{
-    margin-top: 120px;
-    margin-left: 220px;
+    margin-top: 170px;
+    margin-left: 160px;
 }
 
 #icons{
@@ -130,6 +137,10 @@ p{
 }
 */
 
-aside{
-    
+.show{
+display: inline-block;
+}
+
+.hide{
+    display: none;
 }

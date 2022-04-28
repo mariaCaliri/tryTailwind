@@ -15,48 +15,57 @@
 </head>
 <body>
   <header>
-    <div class="container">
+  <div class="container">
+     <!--logo-->
+      
+        <img class="inline fixed ml-10" src="logo.svg" alt="">
      
-      <span class="p-10" >
-        <img class="inline" src="logo.svg" alt="">
-      </span>
+      <!--button menu mobile-->
       <span id="icon-menu"  >
         <img class="float-right lg:hidden mr-8" src="icon-menu.svg" alt="">
       </span>
-
-      <nav id="nav" class="inline-block static ">
+      <!--navbar-->
+      <nav id="nav" class="inline-block fixed left-20 clear-both">
        <ul class=" inline">
-       
-        <li class="inline p-10 text-gray-500 hover:text-gray-700">
-          <a href="#"> Features <span id="dropdownDefault" data-dropdown-toggle="dropdown"><img class="inline " src="icon-arrow-down.svg" alt=""></span>
-            <span id="dropdownDefault2" data-dropdown-toggle="dropdown" class="hidden" ><img class="inline " src="icon-arrow-up.svg" alt=""></span></a>
-        </li>
+       <!--first dropdown-->
+       <li class="inline" >
+
+       <div class="inline p-10 text-gray-500 hover:text-gray-700 relative dropdown">
+          <a href="#"> Features
+            <span class="openBtnDropdown1" data-dropdown-toggle="dropdown"><img class="inline " src="icon-arrow-down.svg" alt=""></span>
+            <span  class="hide closeBtnDropdown1" ><img class="inline " src="icon-arrow-up.svg" alt=""></span></a>
+       </div>   
+       </li>
         <!--dropdown1-->
-         <div id="dropdown" class="hidden text-center absolute top-10 z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 drop-shadow-xl ">
+         <div id="dropdown1" class=" dropdown-content hide text-center absolute top-10 z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 drop-shadow-xl ">
            <ul>
-             <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"> <img class="inline" src="icon-todo.svg" alt=""> Todo list</a></li>
+
+            <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"> <img class="inline" src="icon-todo.svg" alt=""> Todo list</a></li>
              <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"><img class="inline" src="icon-calendar.svg" alt=""> Calendar</a</li>
              <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"><img class="inline" src="icon-reminders.svg" alt=""> Reminders</a></li>
              <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"><img class="inline" src="icon-planning.svg" alt=""> Planning</a> </li>
-             
            </ul>
-         </div>
-
-
-        <li class="inline p-10 text-gray-500 hover:text-gray-700">
-          <a href="#" > Company <span id="dropdownDefault3"><img class="inline" src="icon-arrow-down.svg" alt=""></span>
-            <span id="dropdownDefault4" data-dropdown-toggle="dropdown2" class="hidden" ><img class="inline " src="icon-arrow-up.svg" alt=""></span></a>
-        </li>
-        <!--dropdown-->
-        <div id="dropdown2" class=" hidden text-center absolute top-10 z-10 w-40 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 drop-shadow-xl ">
-          <ul>
-            <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"> History</a></li>
-            <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our Team</a</li>
-            <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Blog</a></li>
-          
-            
-          </ul>
+  
         </div>
+
+
+        <li class="inline">
+
+        <div class=" inline p-10 text-gray-500 hover:text-gray-700 relative dropdown" >
+          <a href="#" > Company 
+            <span  class="openBtnDropdown2" ><img class="inline" src="icon-arrow-down.svg" alt=""></span>
+            <span  class="hide closeBtnDropdown2" ><img class="inline " src="icon-arrow-up.svg" alt=""></span></a>
+          </div>
+          </li>
+        <!--dropdown2-->
+            <div  id="dropdown2" class="dropdown-content hide text-center absolute top-30px left-155px  z-10 w-40 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 drop-shadow-xl ">
+              <ul>
+                <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"> History</a></li>
+                <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our Team</a</li>
+                <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Blog</a></li>
+              </ul>
+            </div>
+          
 
 
 
@@ -140,14 +149,62 @@
 
   </section>
 
-  <aside class="z-10 bg-white fixed top-0 right-0 h-full w-64">
+  <!--sidebar-->
+  <aside id="secondNav" class="hidden z-10 bg-white fixed top-0 right-0 h-full w-64">
 
     <span id="icon-close-menu" class="lg:hidden float:right absolute top-0 right-10">
       <img src="icon-close-menu.svg" alt="">
     </span>
-    <nav id="secondNav">
-      
 
+    <nav  class="text-left">
+
+      <li class="p-5  text-gray-500 hover:text-gray-700 list-none">
+      <div class="mt-10">
+      <a href="#"> Features 
+        <span class="openBtnDropdown3"><img class="inline " src="icon-arrow-down.svg" alt=""></span>
+        <span class="hide closeBtnDropdown3  " ><img class="inline " src="icon-arrow-up.svg" alt=""></span></a>
+      </div>
+      </li>
+     
+        <!--dropdown1-->
+        <div id="dropdown3" class=" hide text-center w-44 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 drop-shadow-xl ">
+          <ul>
+            <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"> <img class="inline" src="icon-todo.svg" alt=""> Todo list</a></li>
+            <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"><img class="inline" src="icon-calendar.svg" alt=""> Calendar</a</li>
+            <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"><img class="inline" src="icon-reminders.svg" alt=""> Reminders</a></li>
+            <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"><img class="inline" src="icon-planning.svg" alt=""> Planning</a> </li>
+            
+          </ul>
+        </div>
+
+      <li class=" p-5 list-none text-gray-500 hover:text-gray-700">
+        <div class="mt-1">
+        <a href="#" > Company 
+          <span class="openBtnDropdown4"><img class="inline" src="icon-arrow-down.svg" alt=""></span>
+          <span  class="hide closeBtnDropdown4" ><img class="inline " src="icon-arrow-up.svg" alt=""></span></a>
+        </div>
+       </li>
+      <!--dropdown2-->
+      <div id="dropdown4" class=" hide text-center w-40 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 drop-shadow-xl ">
+        <ul>
+          <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"> History</a></li>
+          <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our Team</a</li>
+          <li><a href="#" class="block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Blog</a></li>
+        
+          
+        </ul>
+      </div>
+
+
+
+      <li class="p-5 text-gray-500 hover:text-gray-700 list-none" >
+       <a href="#">  Careers</a>
+      </li>
+      <li class="p-5 text-gray-500 hover:text-gray-700 list-none">
+        <a href="#"> About </a>
+      </li>
+    </ul>
+  </div>
     </nav>
 
 
